@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define PI 3.14
+
+float hitungLuasLingkaran(float r) {
+    return PI * r * r;
+}
+
+int main() {
+    float jariJari, luas;
+    
+    printf("Masukkan jari-jari lingkaran: ");
+    scanf("%f", &jariJari);
+    
+    luas = hitungLuasLingkaran(jariJari);
+    printf("Luas lingkaran: %.2f\n", luas);
+    
+    return 0;
+}
